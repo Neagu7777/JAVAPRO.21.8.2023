@@ -18,15 +18,15 @@ public class PensionFund {
     }
 
 
-    public String getFundName() {
-        return fundName;
-
-    }
-
-    public void setFundName(String fundName) {
-        this.fundName = fundName;
-
-    }
+//    public String getFundName() {
+//        return fundName;
+//
+//    }
+//
+//    public void setFundName(String fundName) {
+//        this.fundName = fundName;
+//
+//    }
 
     public boolean isGovernmental() {
         return isGovernmental;

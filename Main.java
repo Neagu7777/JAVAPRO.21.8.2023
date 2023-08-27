@@ -32,7 +32,7 @@ public class Main {
         PensionFund pensionFund = new PensionFund("Фонд 1", true, new Date(15 - 10 - 2022), 500);
 
 
-        pensionFund.setFundName("Фонд 1");
+//        pensionFund.setFundName("Фонд 1");
         pensionFund.setGovernmental(true);
         pensionFund.setCreationDate(new Date(15 - 10 - 2022));
         // Нельзя изменить через сеттер

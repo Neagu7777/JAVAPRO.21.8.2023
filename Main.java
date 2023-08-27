@@ -12,6 +12,8 @@ public class Main {
 
         Pensioner pensioner = new Pensioner("Irina", 75, 170, 70, 6000, 1300); // наследник класса Персон
         Worked worked = new Worked("Irina", 75, 170, 70, 6000, 1000, 1500);//
+        PensionFund pensionFund = new PensionFund("Фонд 1", true, new Date(15 - 10 - 2022), 50000);
+
 
         worked.die();// вызываем метод класса Персон
         pensioner.die();
@@ -28,15 +30,6 @@ public class Main {
         person3.printInfo();
         person3.goToWork();
 
-
-        PensionFund pensionFund = new PensionFund("Фонд 1", true, new Date(15 - 10 - 2022), 500);
-
-
-//        pensionFund.setFundName("Фонд 1");
-        pensionFund.setGovernmental(true);
-        pensionFund.setCreationDate(new Date(15 - 10 - 2022));
-        // Нельзя изменить через сеттер
-        pensionFund.setParticipantCount(500);
 
         pensionFund.info();
     }

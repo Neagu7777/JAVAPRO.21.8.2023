@@ -10,6 +10,15 @@ public class Pensioner extends Person { // екстенс обозначает �
         this.pension = pension;
 
 
+
+    }
+    public double getPension() {
+        return pension;
+
+    }
+
+    public void setPension(double pension) {
+        this.pension = pension;
     }
 
     @Override

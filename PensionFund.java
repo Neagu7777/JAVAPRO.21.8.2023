@@ -7,7 +7,6 @@ public class PensionFund {
     private boolean isGovernmental;
     private Date creationDate;
     private int participantCount;
-    private int age;
 
 
     public PensionFund(String fundName, boolean isGovernmental, Date creationDate, int participantCount) {
@@ -18,19 +17,16 @@ public class PensionFund {
         this.isGovernmental = isGovernmental;
     }
 
-    public int getAge(int age) {
-        return age;
-    }
 
     public String getFundName() {
         return fundName;
 
     }
 
-//    public void setFundName(String fundName) {
-//        //           this.fundName = FundName;
-//
-//    }
+    public void setFundName(String fundName) {
+        this.fundName = fundName;
+
+    }
 
     public boolean isGovernmental() {
         return isGovernmental;
@@ -43,14 +39,15 @@ public class PensionFund {
     }
 
     public Date getCreationDate() {
+
         return creationDate;
     }
 
     // Запрещаем изменение даты создания фонда
-//    public void setCreationDate(Date creationDate) {
-//        //           this.creationDate = creationDate;
-//
-//    }
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+
+    }
 
     public int getParticipantCount() {
         return participantCount;
@@ -58,7 +55,7 @@ public class PensionFund {
     }
 
     public void setParticipantCount(int participantCount) {
-//            this.participantCount = participantCount;
+        this.participantCount = participantCount;
 
     }
 

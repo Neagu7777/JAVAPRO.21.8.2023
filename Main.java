@@ -29,13 +29,13 @@ public class Main {
         person3.goToWork();
 
 
-        PensionFund pensionFund = new PensionFund("Irina", 75, 170, 70, 6000, "Фонд 1", true, new Date(15-10-2022), 500);
+        PensionFund pensionFund = new PensionFund( "Фонд 1", true, new Date(15-10-2022), 500);
 
 
 
-        pensionFund.setFundName("Фонд 1");
+//        pensionFund.setFundName("Фонд 1");
         pensionFund.setGovernmental(true);
-        pensionFund.setCreationDate(new Date(15-10-2022));
+//        pensionFund.setCreationDate(new Date(15-10-2022));
         // Нельзя изменить через сеттер
         pensionFund.setParticipantCount(500);
 

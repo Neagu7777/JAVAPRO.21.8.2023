@@ -2,7 +2,7 @@ package ConstructorPerson;
 
 import java.util.Date;
 
-public class PensionFund extends Person {
+public class PensionFund {
     private String fundName;
     private boolean isGovernmental;
     private Date creationDate;
@@ -10,8 +10,8 @@ public class PensionFund extends Person {
     private int age;
 
 
-    public PensionFund(String name, int age, double height, double weight, int money, String fundName, boolean isGovernmental, Date creationDate, int participantCount) {
-        super(name, age, height, weight, money);
+    public PensionFund(String fundName, boolean isGovernmental, Date creationDate, int participantCount) {
+
         this.fundName = fundName;
         this.creationDate = creationDate;
         this.participantCount = participantCount;
@@ -27,10 +27,10 @@ public class PensionFund extends Person {
 
     }
 
-    public void setFundName(String fundName) {
-        //           this.fundName = FundName;
-
-    }
+//    public void setFundName(String fundName) {
+//        //           this.fundName = FundName;
+//
+//    }
 
     public boolean isGovernmental() {
         return isGovernmental;
@@ -47,10 +47,10 @@ public class PensionFund extends Person {
     }
 
     // Запрещаем изменение даты создания фонда
-    public void setCreationDate(Date creationDate) {
-        //           this.creationDate = creationDate;
-
-    }
+//    public void setCreationDate(Date creationDate) {
+//        //           this.creationDate = creationDate;
+//
+//    }
 
     public int getParticipantCount() {
         return participantCount;
